@@ -2,5 +2,7 @@
   "empid":"",
   "leavereason":"",
   "startDate":"",
-  "numberofdays":"0"
+  "numberofdays":"0",
+  "response1":"",
+  "response2":""
 }
