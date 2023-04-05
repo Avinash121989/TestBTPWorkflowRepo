@@ -1,0 +1,62 @@
+{
+    "id": "productdetailsform",
+    "schemaVersion": "1.1.0",
+    "name": "productdetailsform",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "product_name",
+            "type": "string",
+            "label": "Product Name",
+            "readOnly": true,
+            "value": "${context.response.d.Name}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "product_name_1",
+            "type": "string",
+            "label": "MainCategoryName",
+            "readOnly": true,
+            "value": "${context.response.d.MainCategoryName}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "product_name_2",
+            "type": "string",
+            "label": "Price",
+            "readOnly": true,
+            "value": "${context.response.d.Price}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "product_name_3",
+            "type": "string",
+            "label": "SupplierName",
+            "readOnly": true,
+            "value": "${context.response.d.SupplierName}",
+            "constraints": {
+                "required": false
+            }
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approve",
+            "text": "Approve",
+            "decisionType": "positive"
+        },
+        {
+            "id": "reject",
+            "text": "Reject",
+            "decisionType": "negative"
+        }
+    ]
+}

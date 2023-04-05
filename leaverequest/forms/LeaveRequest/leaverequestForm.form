@@ -1,0 +1,70 @@
+{
+    "id": "leaverequestform",
+    "schemaVersion": "1.1.0",
+    "name": "leaverequestForm",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": true,
+    "content": [
+        {
+            "id": "leave_request_form",
+            "type": "section",
+            "title": "Leave Request Form",
+            "content": [
+                {
+                    "id": "employee_id",
+                    "type": "string",
+                    "label": "Employee ID",
+                    "readOnly": false,
+                    "value": "${context.empid}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "leave_reason",
+                    "type": "string",
+                    "label": "Leave Reason",
+                    "readOnly": false,
+                    "value": "${context.leavereason}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "start_date",
+                    "type": "string",
+                    "label": "Start Date",
+                    "readOnly": false,
+                    "value": "${context.startDate}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "number_of_days",
+                    "type": "string",
+                    "label": "Number of Days",
+                    "readOnly": false,
+                    "value": "${context.numberofdays}",
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approve",
+            "text": "Approve",
+            "decisionType": "positive"
+        },
+        {
+            "id": "reject",
+            "text": "Reject",
+            "decisionType": "negative"
+        }
+    ],
+    "attachments": {}
+}

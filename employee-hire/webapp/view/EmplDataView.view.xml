@@ -1,0 +1,12 @@
+<mvc:View controllerName="avinash.test.workflow1.employeehire.controller.EmplDataView" 
+xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <App id="app">
+        <pages>
+            <Page showHeader="false" showFooter="false">
+                <content>
+                    <Label text="Hello Everone"></Label>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
